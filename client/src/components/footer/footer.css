@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+body{
+    /* position: fixed; */
+}
+
+.footer{
+    font-family: 'Oleo Script', cursive;
+}
+.footer>img{
+    margin-right: 5px;
+}
+
+
+/* @media (min-width: 451px) {
+    .header>.logo {
+        width: 75px;
+        height: 50px;
+    
+    }
+} */
+@media (min-width: 768px) {
+  
+}
+/* @media (min-width: 1000px) {
+    .header>.logo {
+        width: 150px;
+        height: 100px;
+    
+    }
+} */

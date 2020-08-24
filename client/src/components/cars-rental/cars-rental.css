@@ -1,0 +1,64 @@
+.carsRentalSearchArea{
+    background-image: url("/5Z6GmW.jpg");
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.carsRentalSearchArea > input,h5{
+    display: inline-block;
+    margin: 2vh;
+}
+
+.carsRentalSearchArea>h5,.bookACar{
+    color: #ffffff
+
+}
+#locationInput{
+    background-color: white;
+    padding-left: 5%;
+}
+.carRental>* {
+    font-family: arial;
+  }
+  
+  /** float container */
+  .float-container {
+    /* border: solid 1px #ccc; */
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    padding: 0 8px;
+    position: relative;
+    /* width: 300px; */
+    display: inline-block;
+    /** active label */
+  }
+  .float-container input {
+    border: none;
+    font-size: 16px;
+    outline: 0;
+    padding: 16px 0 10px;
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 4%;
+  }
+  .float-container label {
+    font-size: 16px;
+    position: absolute;
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-transform: translate(0, 16px) scale(1);
+            transform: translate(0, 16px) scale(1);
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+  }
+  .float-container.active label {
+    padding-left: 7%;
+    -webkit-transform: translate(0, 4px) scale(0.75);
+            transform: translate(0, 4px) scale(0.75);
+  }
+
+@media (max-width: 581px) {
+    .float-container{
+        display: block;
+    }
+} 

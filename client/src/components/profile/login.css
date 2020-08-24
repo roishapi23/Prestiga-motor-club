@@ -1,0 +1,10 @@
+.profileDetails{
+    display: flex;
+    justify-content: space-between;
+}
+
+#detailKey{
+    display: inline-block;
+    
+}
+

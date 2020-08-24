@@ -1,0 +1,79 @@
+/* .singleCar{
+    width: 200px;
+    height: 100px;
+} */
+
+/* span{
+    display: block;
+    opacity: 0;
+}
+
+span:hover{
+    opacity: 1;
+} */
+
+/* HTML,
+BODY {
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+} */
+
+BODY {
+  /* overflow: hidden; */
+  /* background-color: #222; */
+  /* background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, rgba(255, 255, 255, 0.025)), color-stop(0, transparent)), -webkit-gradient(linear, left top, left bottom, from(#222), to(#000)); */
+  /* background-image: linear-gradient(to right, rgba(255, 255, 255, 0.025) 10%, transparent 0), linear-gradient(#222, #000); */
+  /* background-size: 0.75em 100%, 100% 100%; */
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.wrapper {
+  /* position: relative; */
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  margin: auto;
+  max-width: 800px;
+  max-height: 800px;
+  display: inline-block;
+  /* grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 2vmin; */
+  justify-items: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.singleCar {
+  z-index: 1;
+  /* grid-column: span 2; */
+  /* max-width: 100%; */
+  /* margin-bottom: -52%; */
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+/* IMG:nth-child(7n + 1) {
+  grid-column: 2 / span 2;
+} */
+.singleCar:hover {
+  z-index: 1.1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+          /* display: none; */
+          
+}
+
+/* .grid-wrap>.list-block:hover{
+  display: none;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+} */

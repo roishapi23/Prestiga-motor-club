@@ -1,0 +1,255 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+
+/* body{min-height: 88vh;} */
+
+.main {
+
+text-align: center;
+box-sizing: border-box;
+font-family: 'Patua One', cursive;
+/* font-size: medium; */
+
+background-image: url("/luxury-cars-parked-on-parking-area-3770875.jpg");
+
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+ min-height: 91vh;
+
+}
+
+.main>div{
+    color: whitesmoke;
+}
+
+.btn-one{
+    color: whitesmoke;
+}
+
+.cars{
+
+    /* width: 100%; */
+    
+    /* height: 40px; */
+    background: rgba(0, 0, 0, 0.625);
+    -pie-background:  rgba(0, 0, 0, 0.625);
+    cursor: pointer;
+}
+.contactUs{
+
+
+    /* width: 100%; */
+    background: rgba(114, 109, 109, 0.375);
+    -pie-background:  rgba(114, 109, 109, 0.375);
+
+    /* height: 40px; */
+    cursor: pointer;
+}
+.aboutUs{
+    /* display: inline-block;
+    width: 100%; */
+    background: rgba(0, 0, 0, 0.625);
+    -pie-background:  rgba(0, 0, 0, 0.625);
+
+    /* height: 40px; */
+    cursor: pointer;
+}
+.memberships{
+    
+
+    /* width: 100%; */
+    background: rgba(114, 109, 109, 0.375);
+    -pie-background:  rgba(114, 109, 109, 0.375);
+
+    /* height: 40px; */
+    cursor: pointer;
+}
+
+.menu{
+
+    grid-column: span 12;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu>div:hover{
+    background: rgba(255, 255, 255, 0.603);
+    padding: auto;
+    transition: 0.4s;
+}
+.menu>div{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+}
+
+@media (min-width: 500px) {
+
+    main{
+        font-size: x-large;
+        grid-template-columns: repeat(12, 1fr);
+        grid-column: span 12;
+    }
+
+    .btn-one{
+        font-size: x-large;
+        color: black;
+    }
+
+    .menu>div{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        color: black;
+    }
+
+    .cars{
+
+    display: inline-block;
+    width: 50%;
+    justify-content: center;
+    /* border-radius: 18px; */
+    /* height: 70px; */
+    background: rgba(114, 109, 109, 0.375);
+    -pie-background:  rgba(114, 109, 109, 0.375);
+    }
+    .aboutUs{
+
+    display: inline-block;
+    width: 50%;
+    
+    /* border-radius: 18px; */
+    /* height: 70px; */
+    }
+    .contactUs{
+
+    display: inline-block;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.625);
+    -pie-background:  rgba(0, 0, 0, 0.625);
+    /* border-radius: 18px; */
+    /* height: 70px; */
+    }
+    .memberships{
+
+    display: inline-block;
+    width: 50%;
+  
+    
+    /* border-radius: 18px; */
+    /* height: 70px; */
+    }
+}
+@media (min-width: 900px) {
+
+    main{
+        font-size: x-large;
+        grid-template-columns: repeat(12, 1fr);
+        grid-column: span 12;
+    }
+
+    .menu>div{
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .btn-one{
+        font-size: x-large;
+        color: black;
+    }
+
+    .cars{
+
+    display: inline-block;
+    width: 25%;
+
+    background: rgba(0, 0, 0, 0.625);
+    -pie-background:  rgba(0, 0, 0, 0.625);
+    }
+    .aboutUs{
+
+    display: inline-block;
+    width: 25%;
+    
+    /* border-radius: 18px; */
+    /* height: 70px; */
+    }
+    .contactUs{
+
+    display: inline-block;
+    width: 25%;
+    background: rgba(114, 109, 109, 0.375);
+    -pie-background:  rgba(114, 109, 109, 0.375);
+    
+    /* border-radius: 18px; */
+    /* height: 70px; */
+    }
+    .memberships{
+
+    display: inline-block;
+    width: 25%;
+    
+    /* border-radius: 18px; */
+    /* height: 70px; */
+    }
+}
+
+
+
+.btn-one {
+    transition: all 0.3s;
+    position: relative;
+}
+.btn-one span {
+    transition: all 0.3s;
+}
+.btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(19, 13, 13, 0.5);
+    border-bottom-color: rgba(15, 11, 11, 0.5);
+    transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+    letter-spacing: 2px;
+}
+.btn-one:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+}
+.btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    color: #fff
+    
+}
+.btn-one:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+}
+
+#mainText{
+    
+        font-family: 'bankgothic_lt_btlight';
+        font-weight:normal;
+        font-style:normal;
+        
+}

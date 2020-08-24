@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+.carDetailsComponent{
+    background-color: #fff;
+    min-height: 90vh;
+}
+
+div>.details{
+
+        
+        font-family: 'Patua One', cursive;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 16px 30px 0 rgba(0,0,0,0.19);
+}
+.carText{
+    background: rgba(255, 255, 255, 0.7);
+    -pie-background:  rgba(255, 255, 255, 0.65);
+}
+.singleCarDetails>span{
+    display: inline-block;
+    margin: 30px;
+    
+}
+
+
+iframe{
+    min-height: 50vh;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 16px 30px 0 rgba(0,0,0,0.19);
+}
+
+@media (min-width: 700px) {
+    .carosuel-container{
+        padding-right: 30vh;
+        padding-left: 30vh;
+        
+    }
+    .carousel{
+        width: 100%;
+        max-height: fit-content;
+        display: inline-block;
+        float: left;
+        
+    }
+    
+    .details{
+        
+        display: inline-block;
+    }
+    
+    .iframe-container iframe{
+        
+        width: 50%;
+        height: 50%;
+       
+    }
+    
+}
+@media (min-width: 1000px) {
+
+    .carosuel-container{
+        padding-right: 10vh;
+        padding-left: 10vh;
+    }
+    
+    .carousel{
+        max-width: 510px;
+        max-width: 100%;
+
+    }
+    
+    .details{
+        
+        width: 50%;
+        max-width: inherit;
+
+        
+        display: inline-block;
+        font-size: 5px;
+    }
+    
+    
+}

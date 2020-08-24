@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'bankgothic_lt_btlight';
+    src: url('./font/bnkgothl-webfont.woff2') format('woff2'),
+         url('./font/bnkgothl-webfont.woff') format('woff');
+    /* font-weight: normal;
+    font-style: normal; */
+
+}
+
+
+html, body{
+
+height: 100%;
+
+margin: 0;
+
+padding: 0;
+/* display: grid; */
+
+}
+
+#root{
+
+    /* display: grid; */
+min-height: 100%;
+/* background-color: lightgreen; */
+ /* background-image: url("http://localhost:3001/DSC_1075(1).jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed; */
+ 
+ width: 100%;
+
+
+}

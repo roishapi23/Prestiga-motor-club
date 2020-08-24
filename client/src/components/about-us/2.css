@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&family=Roboto&family=Slabo+13px&family=Ultra&display=swap');
+
+.aboutUsComponent{
+    /* display: flex; */
+    /* width: 100%; */
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "firstText"
+
+    ; */
+}
+
+
+.firstText{
+    font-family: 'Ultra', serif;
+    background-image: url("/philippe-bout-t5cWrYtq0aE-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: ivory;
+    width: 100%;
+    /* display: block; */
+    padding: 3%;
+    
+}
+
+
+.bigDiv{
+    background-color: ivory;
+    /* display: flex; */
+    justify-content: space-around;
+    height: 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    padding: 3%;
+}
+
+.bigDiv>.aboutText{
+    padding: 6%;
+}
+
+.bigDiv>.aboutTextRight{
+    padding: 6%;
+    order:2;
+}
+
+.aboutPic>img{
+    /* padding: 6%; */
+
+    width:auto; 
+    height:40vh;
+    border-radius: 10px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.warrenBuffett{
+
+    background-color: black;
+}
+.warrenBuffettPic{
+    width:auto; 
+    height:60vh;
+}
+
+
+
+
+@media (max-width: 900px) {
+    .bigDiv{
+        grid-template-columns: 1fr;
+
+    }
+
+    .bigDiv>.aboutTextRight{
+        order:0;
+    }
+
+    .aboutPic>img{
+        /* padding: 6%; */
+    
+        /* margin: 2vh; */
+    }
+}
